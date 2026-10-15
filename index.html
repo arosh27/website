@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amin Roshanzamir</title>
+  <meta name="description" content="Toronto-based Account Executive and part-time stuntman.">
+  <link rel="canonical" href="https://aminroshanzamir.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Amin Roshanzamir">
+  <meta property="og:title" content="Amin Roshanzamir">
+  <meta property="og:description" content="Toronto-based Account Executive and part-time stuntman.">
+  <meta property="og:url" content="https://aminroshanzamir.com/">
+  <meta property="og:image" content="https://aminroshanzamir.com/card.jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="800">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #e9eef3;
+      --surface: #ffffff;
+      --ink: #14202c;
+      --muted: #4a5a6a;
+      --accent: #2b59c3;
+      --accent-ink: #ffffff;
+      --block: #f2b33d;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101820;
+        --surface: #18232e;
+        --ink: #e8eef3;
+        --muted: #a5b3c0;
+        --accent: #7fa3f5;
+        --accent-ink: #0d1520;
+        --block: #c98f22;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      display: grid;
+      place-items: center;
+      padding: 3rem 1.25rem;
+    }
+
+    main {
+      width: 100%;
+      max-width: 34rem;
+    }
+
+    .photo {
+      position: relative;
+      width: 9rem;
+      height: 9rem;
+      margin-bottom: 2.25rem;
+    }
+    .photo::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--block);
+      border-radius: 1.25rem;
+      transform: translate(0.6rem, 0.6rem) rotate(4deg);
+    }
+    .photo img {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.25rem;
+      transform: rotate(-3deg);
+      background: var(--surface);
+    }
+
+    h1 {
+      font-family: "Bricolage Grotesque", "Arial Narrow", Arial, sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.75rem, 9vw, 4rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin: 0 0 1.25rem;
+    }
+
+    .lede {
+      font-weight: 600;
+      font-size: 1.1875rem;
+      line-height: 1.45;
+      margin: 0 0 1rem;
+    }
+    p {
+      color: var(--muted);
+      margin: 0 0 1rem;
+      max-width: 62ch;
+    }
+
+    ul.links {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    ul.links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.15rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--ink);
+      background: var(--surface);
+      border: 1.5px solid color-mix(in srgb, var(--ink) 14%, transparent);
+      transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    ul.links a.primary {
+      background: var(--accent);
+      color: var(--accent-ink);
+      border-color: var(--accent);
+    }
+    ul.links a:hover {
+      border-color: var(--accent);
+    }
+    ul.links a.primary:hover {
+      background: color-mix(in srgb, var(--accent) 85%, var(--ink));
+    }
+    a:focus-visible {
+      outline: 3px solid var(--block);
+      outline-offset: 3px;
+    }
+    ul.links svg {
+      width: 1.1rem;
+      height: 1.1rem;
+      flex: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="photo">
+      <img src="profile.jpg" alt="Portrait of Amin Roshanzamir" width="288" height="288">
+    </div>
+
+    <h1>Hi, I'm Amin!</h1>
+
+    <p class="lede">I'm a Toronto-based Account Executive and part-time stuntman.</p>
+    <p>With a proven track record in leading successful Canadian fintech deals, I'm passionate about communicating product and helping people.</p>
+    <p>I'm always open to a coffee chat, connect with me below!</p>
+
+    <ul class="links">
+      <li>
+        <a class="primary" href="https://calendly.com/aminroshanzamir/15" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>
+          Book a coffee chat
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/aminroshanzamir/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/></svg>
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="mailto:contact@aminroshanzamir.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+          Email
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
