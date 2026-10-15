@@ -60,22 +60,40 @@
 
     main {
       width: 100%;
+      max-width: 60rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .text {
       max-width: 34rem;
     }
 
     .photo {
       position: relative;
-      width: 9rem;
-      height: 9rem;
-      margin-bottom: 2.25rem;
+      width: 20rem;
+      height: 20rem;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        max-width: 34rem;
+      }
+      .photo {
+        width: 14rem;
+        height: 14rem;
+      }
     }
     .photo::before {
       content: "";
       position: absolute;
       inset: 0;
       background: var(--block);
-      border-radius: 1.25rem;
-      transform: translate(0.6rem, 0.6rem) rotate(4deg);
+      border-radius: 1.75rem;
+      transform: translate(0.9rem, 0.9rem) rotate(4deg);
     }
     .photo img {
       position: relative;
@@ -83,7 +101,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 1.25rem;
+      border-radius: 1.75rem;
       transform: rotate(-3deg);
       background: var(--surface);
     }
@@ -159,8 +177,10 @@
 <body>
   <main>
     <div class="photo">
-      <img src="profile.jpg" alt="Portrait of Amin Roshanzamir" width="288" height="288">
+      <img src="profile.jpg" alt="Portrait of Amin Roshanzamir" width="640" height="640">
     </div>
+
+    <div class="text">
 
     <h1>Hi, I'm Amin!</h1>
 
@@ -188,6 +208,7 @@
         </a>
       </li>
     </ul>
+    </div>
   </main>
 </body>
 </html>
